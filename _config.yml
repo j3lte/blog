@@ -88,9 +88,10 @@ livereload:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
+  type: github
   repo: https://github.com/j3lte/blog.git
   branch: gh-pages
+  message: Update site
 
 sitemap:
     path: sitemap.xml
