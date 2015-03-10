@@ -1,30 +1,29 @@
 title: "Cyber Awareness & Privacy"
-tags:
 id: 41
-categories:
 date: 2012-12-09 17:20:17
+tags:
+categories:
 ---
-
 Ik kwam vandaag via via deze website tegen: [http://cyberawareness.nctv.nl/](http://cyberawareness.nctv.nl/ "Cyber Awareness")
-&nbsp;
+
 **Ik raad een ieder aan om de korte introductiefilm te bekijken**. Je krijgt hier als leek zijnde een beter beeld van de wereld van cyber security. Met name wat de implicaties zijn van sommige keuzes die wij maken, wat wij op het internet zetten.
-&nbsp;
+
 <!--more-->
 
 Als ik dit op mezelf ga betrekken, dan weet ik dat ik nogal makkelijk te Googlen ben. Nu kan ik zeggen dat ik niets te verbergen heb, dat is de grootst mogelijke bullshit die iemand je kunt vertellen. Iedereen heeft dingen te verbergen. Op het internet zijn er nu talloze voorbeelden te vinden van mensen die bijvoorbeeld ontslagen zijn door wat zij op social media zetten, zoals [Facebook](http://chris.pirillo.com/waitress-fired-over-facebook-status/ "Waitress fired over Facebook status") of [Twitter](http://www.businessinsider.com/twitter-fired-2011-5?op=1 "13 People Who Got Fired For Tweeting"). Niet zo heel gek, want velen denken er niet over na.
-&nbsp;
+
 Mijn opmerking hierover? Denk goed na voor je iets op het internet zet. Er zijn genoeg partijen die mee kunnen lezen wat jij aan het doen bent, puur vanwege het feit dat jij het op je timeline zet van Twitter en Facebook. Om te illustreren wat de kracht is van informatie op het internet, hier een voorbeeld die ik zelf heb meegemaakt.
 
 ## Een voorbeeld
 
 _Een tijd terug was er een vermeende pedofiel actief op Twitter, althans zo leek het. Tweets richting viertienjarige meisjes die nogal sexueel getint waren. Er was een berg ophef over, en dus besloot ik zelf, ter oefening, eens onderzoek te doen naar dit persoon. Ik oefen mijn skills in Social Engineering en research dagelijks, for fun and profit. Dit leek me een goed onderwerp._
-&nbsp;
+
 _Het begon met zijn account op Twitter. Zelf ben ik veel bezig met datamining en had dus al de tools klaarliggen om de laatste 3200 tweets van zijn Twitterprofiel te dumpen. (Wat nu dus een NodeJS-tool is geworden, [zoals hier uitgewerkt](http://jeltelagendijk.nl/2012/12/twitter-toolkit-in-nodejs/ "Twitter toolkit in NodeJS"))_
-&nbsp;
+
 _Hier begint de fun in research en zoeken. Tweets kun je uitsplitsen in tweets (Ik noem ze in bovenstaande tool OT: Original Tweets), retweets (RT) en replies (RP). Door alle tweets te analyseren (voor nu nog handmatig, in de toekomst wil ik dit automatiseren) kwam ik er al snel achter waar hij werkte, dit stond in een van zijn replies. Tevens hadden een aantal van zijn tweets geolocaties erin zitten. Deze kwamen overeen met de woonplaats die hij had genoemd in zijn profiel. Het mobiele telefoonnummer stond in één van zijn replies (wat sowieso een domme actie is, was snel verwijderd, echter had een andere twitteraar die al opgeslagen en geRetweet)._
-&nbsp;
+
 _Dat is dan dus één social media bron. We hebben een naam, telefoonnummer, geolocaties, werkadres. Dan begint voor een researcher het graafwerk door Google te gebruiken. Zoeken op naam, zoeken op plaats, zoeken op nicknames (vooral dat laatste). Dit resulteerde in een profiel van een man die op meerdere datingsites stond, waarvan tevens de voorletters bekend waren en waar, gek genoeg, ook het huisadres van op het internet stond._
-&nbsp;
+
 Binnen een zoekactie van zo'n 45 minuten heb je dan dus een profiel:
 
 *   Naam, voorletters en achternaam

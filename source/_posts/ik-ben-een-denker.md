@@ -1,16 +1,15 @@
 title: Ik ben een denker
-tags:
 id: 381
-categories:
 date: 2014-06-26 10:26:21
+tags:
+categories:
 ---
-
 Het is inmiddels een uur of half een in de nacht, verwikkeld in een diepgaand gesprek. Het is de enige persoon die mij [ongevraagd advies](http://jeltelagendijk.nl/2014/06/advies-hou-je-mond/ "Advies, wanneer wel en wanneer hou je je mond…") mag geven. Sterker nog, ik verwacht het. Het is een gewoonte, een gedachtewisseling die op een dieper niveau gaat dan ik met menigeen heb.
-> <center>_"Joh, ik denk gewoon veel teveel na over dit 'probleem'. Mijn hoofd maakt overuren. Het verschil tussen gevoel en ratio is ver te zoeken, er is een onbalans. Ik trek conclusies die nergens op gebaseerd zijn. What the fuck?"_
->
+> _"Joh, ik denk gewoon veel teveel na over dit 'probleem'. Mijn hoofd maakt overuren. Het verschil tussen gevoel en ratio is ver te zoeken, er is een onbalans. Ik trek conclusies die nergens op gebaseerd zijn. What the fuck?"_
+
 > Een korte stilte.
->
-> _" Hier zijn wat tips [...]. Jelte, dat is de downside van een denker zijn. Jij en ik zijn daarin hetzelfde. Je bent een denker."_</center>
+
+> _" Hier zijn wat tips [...]. Jelte, dat is de downside van een denker zijn. Jij en ik zijn daarin hetzelfde. Je bent een denker."_
 
 <!--more-->
 

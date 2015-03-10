@@ -5,10 +5,9 @@ tags:
   - reading
   - rss
 id: 288
-categories:
 date: 2014-03-09 13:29:28
+categories:
 ---
-
 I love Javascript! As a Front-end Developer it is essential that you keep up with the latest technologies, keep experimenting with new stuff. Keep your creativity flowing. So, how do you keep up?
 
 <!--more-->
@@ -26,8 +25,6 @@ Follow the websites on Twitter. I have [a list on Twitter](https://twitter.com/j
 Subscribe to newsletters. I have been an avid reader of [Javascript Weekly](http://javascriptweekly.com/ "Javascript Weekly") since a year. It keeps up with the latest technologies. Take a look at the [latest issue](http://javascriptweekly.com/issues/171 "Javascript Weekly issue 171") here.
 
 * * *
-
-&nbsp;
 
 ![Javascript: ECMAScript 6](http://jeltelagendijk.nl/wp-content/uploads/2014/03/20130807-es6-150x150.png "ES6")
 

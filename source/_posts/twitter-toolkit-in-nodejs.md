@@ -1,10 +1,9 @@
 title: Twitter toolkit in NodeJS
-tags:
 id: 32
-categories:
 date: 2012-12-09 03:24:35
+tags:
+categories:
 ---
-
 _**Edit (10-05-2014) : Decided to make this one open source, on [Github](https://github.com/j3lte/twitter-toolkit "Twitter toolkit on Github")**_
 
 I love [NodeJS](http://nodejs.org/ "NodeJS"). It has been a blast, learning new stuff every day I work with this great platform. It is currently used in a couple of major websites and will continue to grow to one of the biggest frameworks, if you ask me.
@@ -24,7 +23,7 @@ So here it is, my app.js. It could be more abstract, creating multiple includes 
 - Lookup a user ( _**#node app.js lookup &lt;user&gt;**_ )
 - Check trends ( _**#node app.js trends 1**_ ), for now I included the woeid from the Netherlands as option 2\. (A WoeID = Where On Earth ID, [created by Yahoo](http://developer.yahoo.com/geo/geoplanet/guide/concepts.html "WoeID Key Concepts"). I found the id using [this tool](http://woeid.rosselliot.co.nz/ "WoeID lookup"))
 - Dump the tweets from a user ( _**#node app.js dump &lt;user&gt;**_ )
-&nbsp;
+
 Dumping tweets is fun. You could put them into a database and analyse it. Twitter API allows you to dump  approximately 3200 tweets. In most cases it will not be this amount of tweets, but a lot less (because tweets get deleted, etcetera, if I recall this right).
 
 ## What do you need?
@@ -45,5 +44,5 @@ _**Edit (10-05-2014):**_
 _**Code is removed. Revised version can be found here: [https://github.com/j3lte/twitter-toolkit/blob/master/app.js](https://github.com/j3lte/twitter-toolkit/blob/master/app.js)**_
 
 Have fun with it! If you have any questions, feel free to ask! I will provide a Github link when my code is more advanced. Hit me up [on Twitter](http://twitter.com/j3lte "Jelte on Twitter") if you can help me creating a better code!
-&nbsp;
+
 More will follow in the near future....

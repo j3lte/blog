@@ -1,12 +1,9 @@
 title: "Advies, wanneer wel en wanneer houd je je mond..."
-tags:
-  - advies
-  - luisteren
+tags: []
 id: 365
-categories:
-date: 2014-06-25 00:11:32
+categories: []
+date: 2014-06-25 00:11:00
 ---
-
 > _Een lang verhaal aan de telefoon. Bij mij was er de dagen ervoor een grote mate van vraagtekens omhoog gekomen omdat ik bepaalde dingen simpelweg niet kon plaatsen. Het verhaal begon met een aantal argumenten, waar ik over moest nadenken. De eindconclusie eindigde in een vraag naar mij toe, althans een vraag die ik mezelf stelde vanuit het oogpunt van de ander: "Jelte, probeer je me te veranderen?"_
 
 <!--more-->
@@ -37,7 +34,6 @@ Als men om je advies vraagt, probeer niet te oordelen. Als je zegt "Je had dit m
 
 Dit grijpt terug op het eerste punt. Wees terughoudend, als je merkt dat iemand gewoon zijn/haar hart wil luchten. Vaak lucht het voor de persoon vooral op om even een woordje te doen. Dan zit diegene niet te wachten op 'advies', maar wil gewoon dat je luistert.
 
-<br />
 
 Uit bovenstaande punten zijn het eerste en laatste vooral op mijzelf van toepassing geweest. In het stukje zelfreflectie, achteraf, kwam ik erachter dat ik dit in het verleden vaker heb gedaan. Hiermee duw je sommige mensen weg.
 
