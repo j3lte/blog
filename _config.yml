@@ -79,7 +79,7 @@ disqus_shortname: jeltejustaguywithahackersmindset
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: metro-light
+theme: metro-jelte
 exclude_generator:
 
 livereload:
