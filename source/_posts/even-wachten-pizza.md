@@ -1,6 +1,6 @@
 title: "Even wachten... pizza!"
 id: 23
-tags: []
+tags: [cybersecurity]
 categories: []
 date: 2012-12-08 18:32:00
 ---

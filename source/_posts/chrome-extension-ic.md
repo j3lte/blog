@@ -1,4 +1,4 @@
-tags: []
+tags: [dev]
 categories: []
 title: 'InnerCircle Enhancement Suite :: Chrome Extension'
 date: 2015-04-29 21:08:00

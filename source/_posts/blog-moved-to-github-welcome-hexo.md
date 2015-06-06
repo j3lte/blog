@@ -1,6 +1,6 @@
 title: Blog moved to Github. Welcome Hexo
 date: 2015-03-10 00:09:46
-tags:
+tags: [dev]
 ---
 Finally getting something done with my blog. It has been about half a year since I wrote my last piece. I was a bit done with blogging, actually. No further input, no more poems and just too busy doing other things. Well, today I decided to move my blog to [Github](https://github.com/j3lte/blog). Why? Because ever since I started working as a front-end developer, I have fallen in love with just plain old HTML again. And so, what better way to do than to just move my website to a static one?
 

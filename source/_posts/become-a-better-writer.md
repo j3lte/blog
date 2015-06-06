@@ -1,7 +1,7 @@
 title: Become a better writer
 id: 175
 date: 2013-01-30 15:44:51
-tags:
+tags: [personal]
 categories:
 ---
 This answer on Quora pretty much sums it up:

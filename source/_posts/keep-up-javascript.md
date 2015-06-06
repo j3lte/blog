@@ -1,9 +1,5 @@
 title: "Keep up with the latest Javascript & technologies"
-tags:
-  - javascript
-  - newsletters
-  - reading
-  - rss
+tags: [dev]
 id: 288
 date: 2014-03-09 13:29:28
 categories:

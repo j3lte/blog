@@ -1,7 +1,7 @@
 title: Een opgeruimd leven...
 id: 347
 date: 2014-06-23 14:15:54
-tags:
+tags: [personal,psychology]
 categories:
 ---
 Dit keer even niet over m'n rules. Neen, het ligt even stil. Niet qua mindset, vooral qua prioriteit. Ik maak me geen zorgen, de voortzetting van mn [30 rules](http://jeltelagendijk.nl/2014/05/rules-het-begin/ "The rules… Het begin") komt snel. Er waren echter andere dingen die eerst getackled moesten worden. En dat is een proces dat zich al aan het voortzetten is de afgelopen paar weken. Eentje die me aan het hart gaat.

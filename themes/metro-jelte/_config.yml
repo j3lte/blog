@@ -4,6 +4,8 @@ menu:
 
 widgets:
 - recent_posts
+- archives
+- tag
 - search
 
 excerpt_link: Continue Reading

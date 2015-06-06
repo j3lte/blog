@@ -1,6 +1,6 @@
 title: "Userscripts : InnerCircle Enhancement Suite"
 date: 2015-03-10 20:42:14
-tags:
+tags: [dev]
 ---
 About a year and a half ago I started using [Tinder](http://www.gotinder.com/). Being onto the whole 'online-dating thing', a friend of mine introduced me to [InnerCircle](https://www.theinnercircle.co/). A new way of getting to know singles, geing referred to by friends. Great!
 

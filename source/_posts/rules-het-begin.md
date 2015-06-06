@@ -1,7 +1,7 @@
 title: The rules... Het begin
 id: 320
 date: 2014-05-04 22:45:52
-tags:
+tags: [personal,psychology]
 categories:
 ---
 > _Het is een donderdagavond, een uurtje of negen. Op Whatsapp heb ik een discussie met Annemarie, het gaat onder andere over bloggen. We hebben het over doelen stellen, over bloggen en wat het inhoudt. Gaandeweg het gesprek, waarin zij advocaat van de duivel speelt en me begint te bombarderen met vragen, die veelal beginnen met "waarom", begint er bij mij een beeld te ontstaan. Het beeld van een reeks blogposts die al een jaar lang op de boekenplank stof liggen te happen in de vorm van ideeën en half geschreven verhalen._

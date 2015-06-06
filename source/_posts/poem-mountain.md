@@ -2,7 +2,7 @@ title: "Poem: The mountain"
 id: 398
 date: 2014-06-30 19:00:29
 categories:
-tags:
+tags: [personal,poem]
 ---
 Just my line of thoughts when helping a friend or loved one.
 

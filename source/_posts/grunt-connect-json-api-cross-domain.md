@@ -1,11 +1,5 @@
 title: "Grunt, Connect, JSON API and Cross Domain trouble"
-tags:
-  - assemble
-  - connect
-  - cross-domain
-  - grunt
-  - javascript
-  - less
+tags: [dev]
 id: 263
 date: 2013-09-06 14:44:34
 categories:

@@ -1,10 +1,17 @@
 <%
 var title = '';
+var months = ['Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December'];
 if (page.category) title = page.category;
 if (page.tag) title = page.tag;
 if (page.archive){
-  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
-  else title = __('archive_a');
+  if (page.year && page.month) {
+    title = months[page.month-1] + ' ' + page.year;
+    //title = page.year + (page.month ? '/' + page.month : '');
+  } else if (page.year) {
+    title = page.year
+  } else {
+    title = __('archive_a');
+  }
 }
 %>
 <h2 class="archive-title<% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
@@ -66,4 +73,3 @@ if (page.archive){
 
 
 
-   

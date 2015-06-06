@@ -1,9 +1,5 @@
 title: " Git. Learn to branch, command-line...."
-tags:
-  - git
-  - github
-  - learning
-  - version control
+tags: [dev]
 id: 303
 categories:
 date: 2014-03-20 13:27:50

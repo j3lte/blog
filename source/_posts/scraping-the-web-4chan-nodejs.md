@@ -1,7 +1,7 @@
 title: "Scraping the web: 4chan & NodeJS"
 id: 227
 date: 2013-04-06 16:33:12
-tags:
+tags: [dev]
 categories:
 ---
 It's been a while that I've posted something new. Busy doing work and several projects on the side. Got some major things going on, that's why I have not been able to keep up with my blog. So today is a new day!

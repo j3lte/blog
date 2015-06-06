@@ -1,7 +1,7 @@
 title: "The Pirate Bay: Away From Keyboard"
 id: 201
 date: 2013-02-14 13:20:31
-tags:
+tags: [personal]
 categories:
 ---
 "The Pirate Bay: Away From Keyboard". Interesting documentary about the guys behind The Pirate Bay. This is about their trial, and gives you some insight in their actions, why they do things the way they do. I do not condone copyright violation, it is just an interesting video about the guys behind it.

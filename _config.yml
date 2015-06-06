@@ -82,6 +82,11 @@ disqus_shortname: jeltejustaguywithahackersmindset
 theme: metro-jelte
 exclude_generator:
 
+link_checker:
+  enabled: true
+  storage_dir: tmp/link_checker
+  silent_logs: false
+
 livereload:
   port: 35729
 

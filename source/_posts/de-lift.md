@@ -1,7 +1,7 @@
 title: "Gedicht: De lift"
 id: 401
 date: 2014-07-01 18:08:44
-tags:
+tags: [personal, poem]
 categories:
 ---
 Af en toe schrijf je ook wel eens gedichten die... nouja... gebaseerd zijn op fantasie. Of was dit toch de realiteit?

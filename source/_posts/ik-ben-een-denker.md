@@ -1,7 +1,7 @@
 title: Ik ben een denker
 id: 381
 date: 2014-06-26 10:26:21
-tags:
+tags: [psychology,personal]
 categories:
 ---
 Het is inmiddels een uur of half een in de nacht, verwikkeld in een diepgaand gesprek. Het is de enige persoon die mij [ongevraagd advies](http://jeltelagendijk.nl/2014/06/advies-hou-je-mond/ "Advies, wanneer wel en wanneer hou je je mond…") mag geven. Sterker nog, ik verwacht het. Het is een gewoonte, een gedachtewisseling die op een dieper niveau gaat dan ik met menigeen heb.

@@ -1,7 +1,7 @@
 title: Need some extra motivation?
 id: 87
 date: 2012-12-23 16:45:54
-tags:
+tags: [personal]
 categories:
 ---
 Whenever I feel a bit down, or having a hard time, it always helps to find some extra motivation. It can come from anywhere, actually. People around you, a good book, or a movie. Allthough some of it is fiction, the message behind it can be pretty powerful. So, I compiled a list of a couple of Youtube videos that give me extra motivation. Love it? Share it!

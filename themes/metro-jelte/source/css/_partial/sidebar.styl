@@ -18,9 +18,9 @@
     .entry
       font-size 0.9em
       li
-        padding-bottom 10px
+        padding-bottom 5px
         border-bottom 1px solid #eee
-        margin-bottom 10px
+        margin-bottom 5px
 
     ul, ol, dl
       list-style none
@@ -61,7 +61,7 @@
   .tag
     a
       margin-right 5px
-      padding 5px 7px
+      padding 1px 3px
       border 1px solid #eee
       float left
       display block
@@ -90,4 +90,14 @@
     a
       margin-right 10px
       display inline-block
+
+  .archive-list
+    .archive-list-item
+      border-bottom:1px solid #eee
+      .archive-list-count
+        &:before
+          content:'\0028'
+        &:after
+          content: '\0029'
+        margin-left:10px
 
