@@ -97,6 +97,8 @@ deploy:
   repo: https://github.com/j3lte/blog.git
   branch: gh-pages
   message: Update site
+  name: j3lte
+  email: jwlagendijk@gmail.com
 
 sitemap:
     path: sitemap.xml
