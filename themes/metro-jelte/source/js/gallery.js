@@ -62,4 +62,27 @@
       }
     });
   });
+
+  /* counter */
+
+  var startDateTime = new Date(2016,6,27); // YYYY (M-1) D H m s ms (start time and date from DB)
+  var startStamp = startDateTime.getTime();
+
+  var newDate = new Date();
+  var newStamp = newDate.getTime();
+
+  var timer;
+
+  function updateClock() {
+      newDate = new Date();
+      newStamp = newDate.getTime();
+      var diff = Math.round((newStamp-startStamp)/1000);
+
+      var d = Math.floor(diff/(24*60*60)); /* though I hope she won't be working for consecutive days :) */
+
+      document.getElementById("progress").innerHTML = "<div class=\"counter\">" + d + "</div>days of saying &quot;not today&quot;";
+  }
+
+  updateClock();
+  setInterval(updateClock, 24 * 3600 * 1000);
 })(jQuery);
