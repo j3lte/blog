@@ -92,13 +92,11 @@ livereload:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+
 deploy:
   type: git
-  repo: https://github.com/j3lte/blog.git
+  repo: git@github.com:j3lte/blog.git
   branch: gh-pages
-  message: Update site
-  name: j3lte
-  email: jwlagendijk@gmail.com
 
 sitemap:
     path: sitemap.xml
