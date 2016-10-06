@@ -1,0 +1,19 @@
+language: node_js
+branches:
+  only:
+  - master
+before_install:
+- npm install -g hexo
+- npm install
+install:
+- hexo generate
+env:
+  global:
+    secure: e4a3IdYPG0wIo+qn0LQgiTS6j81B9EnTV4LlPDF7QIYTA3BMqejIEWb2A9z/cYW4+hGX/Sx3TXFAtRWkMYA5b5P0fcXn/S1UUWccEJALHDQZuYwlmKlyzYmRhnmvL5ZLa4+0ph4Jx0DUezB28SKZ9USy3hE6lG5ztwKabovWO4Y=
+
+before_script:
+- git config --global user.name 'j3lte via Travis CI'
+- git config --global user.email 'jwlagendijk@gmail.com'
+- sed -i'' "s~git@github.com:j3lte/blog.git~https://${GH_TOKEN}:x-oauth-basic@github.com/j3lte/blog.git~" _config.yml
+script:
+- hexo deploy --silent
