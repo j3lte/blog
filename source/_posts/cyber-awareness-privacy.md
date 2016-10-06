@@ -1,8 +1,8 @@
 title: "Cyber Awareness & Privacy"
 id: 41
 date: 2012-12-09 17:20:17
+updated: 2012-12-09 17:20:17
 tags: [cybersecurity]
-categories:
 ---
 Ik kwam vandaag via via deze website tegen: [http://cyberawareness.nctv.nl/](http://cyberawareness.nctv.nl/ "Cyber Awareness")
 

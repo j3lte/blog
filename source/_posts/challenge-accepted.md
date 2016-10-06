@@ -1,8 +1,8 @@
 title: Challenge... accepted
 id: 100
 date: 2013-01-06 13:24:45
+updated: 2013-01-06 13:24:45
 tags: [psychology, personal]
-categories:
 ---
 Het stuk gelezen over "[Goede voornemens](http://jeltelagendijk.nl/2012/12/goede-voornemens/ "Goede voornemens")"? Right, dat zou iets duidelijk moeten maken over het stellen van doelen en dient enigszins als houvast qua regels voor het maken van die doelen. Echter, wat als we een gewoonte willen veranderen? Ik vertelde al hoe het niet mogelijk is om ergens niet aan te denken, toch? Hoe verander ik dan een gewoonte? Het is een stuk zelfdiscipline dat je daarvoor nodig hebt, alleen is het iets waar velen in falen. Hier ben ik zelf ook schuldig aan. Een bepaald doel voor ogen hebben (af- of aanleren van een gewoonte), alleen kan ik er geen tijdslimiet of deadline aan vastknopen.
 

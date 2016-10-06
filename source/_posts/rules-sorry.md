@@ -1,8 +1,8 @@
 title: "Sorry :: The rules"
 id: 332
 date: 2014-05-25 21:52:17
+updated: 2014-05-25 21:52:17
 tags: [personal,psychology]
-categories:
 ---
 Langzaam aan begon het tot me door te dringen. Het was een dinsdagavond, pakweg 2 jaar geleden. De mindmap, een overzicht van problematiek die ik op dat moment ondervond, was in de verste verte nog niet af. Steekwoorden hier en daar, verbindingen naar belangrijke onderwerpen en vooral "wat wil ik nog meer?". Ieder punt was te benoemen, ik had sowieso een aantal zaken die ik graag wilde in mijn leven. En toch, toch was het er nog niet van gekomen. De vraag die ik mezelf stelde, terwijl mijn blik verdwaald raakte in de wirwar van connecties bij elk onderwerp, was een standaardvraag: "Waarom heb je dit nog niet? Hoezo niet?". De denkbeeldige kritische jury stond voor me en bekogelde me met vragen. Het antwoord op alle vragen begon met.... "Ja sorry, maar..."
 

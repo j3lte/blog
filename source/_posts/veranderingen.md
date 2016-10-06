@@ -1,8 +1,8 @@
 title: Veranderingen
 id: 358
 date: 2014-06-24 12:35:54
+updated: 2014-06-24 12:35:54
 tags: [personal,psychology]
-categories:
 ---
 Ik nodig je uit om 7 minuten te kijken naar onderstaande video. Het is een TED talk van [Dan Gilbert](http://www.ted.com/speakers/dan_gilbert "Dan Gilbert on TED"), genaamd "The psychology of your future self".
 

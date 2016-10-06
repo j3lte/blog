@@ -1,8 +1,8 @@
 title: De kracht van Javascript
 id: 109
 date: 2013-01-03 16:45:52
+updated: 2013-01-03 16:45:52
 tags: [dev]
-categories:
 ---
 Ik ben inmiddels al meer dan een jaar full-time als developer aan de slag en dit bevalt me goed. Ik startte als een rookie eigenlijk, met basiskennis van .NET en PHP. Door de tijd heen ben ik me meer gaan focussen op front-end development, en hetgeen waar ik minder kaas van had gegeten, was [Javascript](https://developer.mozilla.org/en/docs/JavaScript "Javascript"). Een scriptingtaal die ik tot op zekere hoogte begreep en waar ik eerlijk gezegd weinig mee deed. Tot dan toe...
 

@@ -2,7 +2,7 @@ title: "Grunt, Connect, JSON API and Cross Domain trouble"
 tags: [dev]
 id: 263
 date: 2013-09-06 14:44:34
-categories:
+updated: 2013-09-06 14:44:34
 ---
 The last couple of months I have been pretty busy, started a new job. Finally, I am now a full-time front-end developer at a big company. In those last months I learned a couple of new things as well. One of them is [Grunt](http://gruntjs.com/ "GruntJS"), an awesome task runner. I used it to build templates, based on Twitter Bootstrap. The very neat part of Grunt is doing everything automatically. Never worrying about minifying your CSS, converting that from LESS, uglifying your Javascript files, and so on. What I didn't knew before was that Grunt as a plugin, called server. It does what it says it does.
 

@@ -1,8 +1,9 @@
 title: "Poem: The mountain"
 id: 398
 date: 2014-06-30 19:00:29
-categories:
+updated: 2014-06-30 19:00:29
 tags: [personal,poem]
+banner: /gallery/mountain.jpg
 ---
 Just my line of thoughts when helping a friend or loved one.
 

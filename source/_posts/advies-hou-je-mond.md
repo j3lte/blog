@@ -1,8 +1,8 @@
 title: "Advies, wanneer wel en wanneer houd je je mond..."
 tags: [psychology]
 id: 365
-categories: []
 date: 2014-06-25 00:11:00
+updated: 2014-06-25 00:11:00
 ---
 > _Een lang verhaal aan de telefoon. Bij mij was er de dagen ervoor een grote mate van vraagtekens omhoog gekomen omdat ik bepaalde dingen simpelweg niet kon plaatsen. Het verhaal begon met een aantal argumenten, waar ik over moest nadenken. De eindconclusie eindigde in een vraag naar mij toe, althans een vraag die ik mezelf stelde vanuit het oogpunt van de ander: "Jelte, probeer je me te veranderen?"_
 

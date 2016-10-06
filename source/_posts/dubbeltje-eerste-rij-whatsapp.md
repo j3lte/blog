@@ -1,8 +1,8 @@
 title: Dubbeltje... eerste rij... Whatsapp
 id: 72
 date: 2012-12-16 20:09:28
+updated: 2012-12-16 20:09:28
 tags: [personal]
-categories:
 ---
 > _Zaterdagavond... uurtje of 19u 's avonds. De Twitter tracker die ik [eerder](http://jeltelagendijk.nl/2012/12/twitter-toolkit-in-nodejs/ "Twitter toolkit in NodeJS") schreef slaat ineens op tilt. Regels vliegen voorbij en het gemiddelde ligt op 44 tweets per seconde, met het sleutelwoord "Whatsapp". Het moge duidelijk zijn. [Whatsapp lag er weer eens uit](https://twitter.com/wa_status/status/280027642789507073 "Wa_status on Twitter")._
 <!--more-->

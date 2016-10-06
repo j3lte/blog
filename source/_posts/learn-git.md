@@ -1,8 +1,8 @@
 title: " Git. Learn to branch, command-line...."
 tags: [dev]
 id: 303
-categories:
 date: 2014-03-20 13:27:50
+updated: 2014-03-20 13:27:50
 ---
 
 Push, pull, branch, pull requests, cherry-picking... No, these words do not come from some sort of bad C-rated adult movie... These are terms I work with on a daily basis, using [Git](http://en.wikipedia.org/wiki/Git_(software) "Git on Wikipedia"). In the past I have worked with [Subversion](http://en.wikipedia.org/wiki/Subversion_(software) "Subversion on Wikipedia"), which was a total nightmare (in my humble opinion ofcourse, I do not want to offend people who like SVN). Version control comes in many flavors. Lately I have been working in several teams on various big projects, and so the need for version control of your code is necessary.

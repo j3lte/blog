@@ -2,7 +2,7 @@ title: "Keep up with the latest Javascript & technologies"
 tags: [dev]
 id: 288
 date: 2014-03-09 13:29:28
-categories:
+updated: 2014-03-09 13:29:28
 ---
 I love Javascript! As a Front-end Developer it is essential that you keep up with the latest technologies, keep experimenting with new stuff. Keep your creativity flowing. So, how do you keep up?
 

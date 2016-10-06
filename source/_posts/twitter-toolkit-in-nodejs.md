@@ -1,8 +1,8 @@
 title: Twitter toolkit in NodeJS
 id: 32
 date: 2012-12-09 03:24:35
+updated: 2012-12-09 03:24:35
 tags: [dev]
-categories:
 ---
 _**Edit (10-05-2014) : Decided to make this one open source, on [Github](https://github.com/j3lte/twitter-toolkit "Twitter toolkit on Github")**_
 

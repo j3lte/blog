@@ -1,8 +1,8 @@
 title: One piece of grey
 id: 189
 date: 2013-02-06 01:05:17
+updated: 2013-02-06 01:05:17
 tags: [personal,poem]
-categories:
 ---
 My thoughts, in a poem. Not my first, never my last. Just my one piece of grey.
 > This time I refuse to accept

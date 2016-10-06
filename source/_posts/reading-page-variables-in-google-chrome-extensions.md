@@ -1,5 +1,6 @@
 title: Reading page variables in Google Chrome extensions
 date: 2015-06-06 13:37:51
+updated: 2015-06-06 13:37:51
 tags: [dev]
 ---
 Recently I have been developing two Chrome Extensions for a contractor. This is a fun way to learn new things, especially about the API used.

@@ -1,6 +1,8 @@
 title: Machteloos
 date: 2016-09-17 20:16:29
+updated: 2016-09-17 20:16:29
 tags: [personal, poem]
+banner: /gallery/powerless.jpg
 ---
 Het is al lang geleden dat ik iets geblogd heb. Dit gedicht schreef ik toen een familielid in het ziekenhuis kwam te liggen. Hing voor mn gevoel aan een zijden draadje. Gelukkig is het goedgekomen. Dit gedicht komt uit het moment voor de operatie, midden in de nacht.
 

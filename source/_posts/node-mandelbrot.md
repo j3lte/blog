@@ -1,8 +1,8 @@
 title: Node Mandelbrot
 id: 259
 date: 2013-07-15 10:14:43
+updated: 2013-07-15 10:14:43
 tags: [dev]
-categories:
 ---
 Het is alweer wat jaren geleden dat ik mijn VWO diploma behaalde. Voor het profiel NT had ik als onderwerp voor het profielwerkstuk: Fractals. Geïnteresseerd in wiskunde, wilde ik dit graag verder uitdiepen. Een van de meest bekende fractals is de [Mandelbrot-verzameling](http://nl.wikipedia.org/wiki/Mandelbrotverzameling "Mandelbrot"). Lees gerust verder op Wikipedia wat het inhoudt.
 
