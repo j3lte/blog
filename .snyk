@@ -1,8 +1,11 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.7.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:ms:20170412':
     - hexo-server > compression > debug > ms:
         patched: '2017-05-24T03:28:07.159Z'
+  'npm:debug:20170905':
+    - hexo-server > compression > debug:
+        patched: '2017-09-27T03:28:11.982Z'
