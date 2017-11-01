@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jelte, Just a guy with a hackers&#39; mindset</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.jeltelagendijk.nl/"/>
+  <updated>2016-09-17T20:16:29.000Z</updated>
+  <id>http://blog.jeltelagendijk.nl/</id>
+  
+  <author>
+    <name>Jelte Lagendijk</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Machteloos</title>
+    <link href="http://blog.jeltelagendijk.nl/2016/09/machteloos/"/>
+    <id>http://blog.jeltelagendijk.nl/2016/09/machteloos/</id>
+    <published>2016-09-17T20:16:29.000Z</published>
+    <updated>2016-09-17T20:16:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Het is al lang geleden dat ik iets geblogd heb. Dit gedicht schreef ik toen een familielid in het ziekenhuis kwam te liggen. Hing voor mn gevoel aan een zijden draadje. Gelukkig is het goedgekomen. Dit gedicht komt uit het moment voor de operatie, midden in de nacht.</p><a id="more"></a><blockquote><p>Daar sta je dan<br>Wachtend op de toon<br>“Ze is heel erg ziek”<br>Snikkend door de telefoon</p><p>Daar sta je dan<br>Met een steen op je maag<br>Zal ze er straks nog zijn?<br>Chaotisch onoplosbare vraag</p><p>Daar ga je dan<br>Met een rotvaart over straat<br>Elke minuut afvragend<br>Ben ik nu niet te laat</p><p>Daar lig je dan<br>Doodziek en vol pijn<br>Me groot houdend en teder<br>Wil ik er voor je zijn</p><p>De machteloze gevoelens<br>Maken een woede in me los<br>Met lege handen naast het bed<br>Waarom ben jij nou de klos?</p><p>Dit is toch niet eerlijk?<br>Zegt het boze in mij<br>Wachten op de volgende stap<br>Wanneer is de pijn voorbij?</p><p>Je kijkt nog een keertje<br>Je staat er verdrietig en boos<br>De kamer uitgereden<br>Blijf je achter, machteloos</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Het is al lang geleden dat ik iets geblogd heb. Dit gedicht schreef ik toen een familielid in het ziekenhuis kwam te liggen. Hing voor mn gevoel aan een zijden draadje. Gelukkig is het goedgekomen. Dit gedicht komt uit het moment voor de operatie, midden in de nacht.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+      <category term="poem" scheme="http://blog.jeltelagendijk.nl/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reading page variables in Google Chrome extensions</title>
+    <link href="http://blog.jeltelagendijk.nl/2015/06/reading-page-variables-in-google-chrome-extensions/"/>
+    <id>http://blog.jeltelagendijk.nl/2015/06/reading-page-variables-in-google-chrome-extensions/</id>
+    <published>2015-06-06T13:37:51.000Z</published>
+    <updated>2015-06-06T13:37:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Recently I have been developing two Chrome Extensions for a contractor. This is a fun way to learn new things, especially about the API used.</p><p>For one of those Extensions I needed to perform a few checks on a page, reading variables in the page. There is only one problem: The way Chrome Extensions work is that their contentscripts (either defined by the manifest.json or as an executed script) are running in their <a href="https://developer.chrome.com/extensions/content_scripts#execution-environment" target="_blank" rel="external"><em>own world</em></a>.</p><p>I found a workaround that I hosted on <a href="https://gist.github.com/j3lte/13cdfcc15868f6cc5d41" target="_blank" rel="external">Github</a></p><a id="more"></a><p><code>popup-snippet.js</code> is a snippet of the popup script. The function <code>performTests</code> will first query chrome for the current Tab that is opened. Next, on the current tab it injects <code>variable-checker.js</code> and execute it. The variable checker will inject dynamic scripts in the page that are able to read the variables.</p><p>As you can see the variable-checker is a simple script that actually does a very ugly thing, but it works. It reads content of the dynamically generated divs, which contains the output of the dynamically generated scripts. These scripts do have access to the page variables (in this case it tries to read the version of jQuery and window.et)</p><p>If it is able to read a variable, it will return the content of it. If not, it will return null.</p><script src="https://gist.github.com/j3lte/13cdfcc15868f6cc5d41.js"></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Recently I have been developing two Chrome Extensions for a contractor. This is a fun way to learn new things, especially about the API used.&lt;/p&gt;
+&lt;p&gt;For one of those Extensions I needed to perform a few checks on a page, reading variables in the page. There is only one problem: The way Chrome Extensions work is that their contentscripts (either defined by the manifest.json or as an executed script) are running in their &lt;a href=&quot;https://developer.chrome.com/extensions/content_scripts#execution-environment&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;em&gt;own world&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I found a workaround that I hosted on &lt;a href=&quot;https://gist.github.com/j3lte/13cdfcc15868f6cc5d41&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Blog moved to Github. Welcome Hexo</title>
+    <link href="http://blog.jeltelagendijk.nl/2015/03/blog-moved-to-github-welcome-hexo/"/>
+    <id>http://blog.jeltelagendijk.nl/2015/03/blog-moved-to-github-welcome-hexo/</id>
+    <published>2015-03-10T00:09:46.000Z</published>
+    <updated>2015-03-10T00:09:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Finally getting something done with my blog. It has been about half a year since I wrote my last piece. I was a bit done with blogging, actually. No further input, no more poems and just too busy doing other things. Well, today I decided to move my blog to <a href="https://github.com/j3lte/blog" target="_blank" rel="external">Github</a>. Why? Because ever since I started working as a front-end developer, I have fallen in love with just plain old HTML again. And so, what better way to do than to just move my website to a static one?</p><a id="more"></a><center><img src="http://i.imgur.com/XYfU1OG.jpg" alt=""></center><p>So I still need some tweaking, but I have finally migrated all my old posts from Wordpress to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>. This was a bit of a pain in the ass, actually. Especially because I needed to redo all my posts in Markdown. Yes, the text was already there, but I had to do the formatting again.</p><p>To make sure Google would index my old blogposts again, I had to write some .htaccess rewrites, so this will probably be picked up in a week or so. Hopefully the SEO won’t suck, but then again, my blog isn’t really active or pretty much interesting for anyone to read…</p><p>What’s next?</p><ul><li>Have to update my Hexo to 3.0 (this is still on the old one)</li><li><del>Tweak the layout a bit more, have some issues with the formatting of paragraphs</del> Done.</li><li>Write new content</li></ul><p>Oh yeah, I started a new job. So it will be as hard as it was to write content. Maybe doing some poems again. We all love poems.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Finally getting something done with my blog. It has been about half a year since I wrote my last piece. I was a bit done with blogging, actually. No further input, no more poems and just too busy doing other things. Well, today I decided to move my blog to &lt;a href=&quot;https://github.com/j3lte/blog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;. Why? Because ever since I started working as a front-end developer, I have fallen in love with just plain old HTML again. And so, what better way to do than to just move my website to a static one?&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gedicht: De lift</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/07/de-lift/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/07/de-lift/</id>
+    <published>2014-07-01T18:08:44.000Z</published>
+    <updated>2014-07-01T18:08:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Af en toe schrijf je ook wel eens gedichten die… nouja… gebaseerd zijn op fantasie. Of was dit toch de realiteit?</p><a id="more"></a><blockquote><p>Onze blikken kruisen in de lift<br>Mijn gevoel zegt maar 1 ding<br>Helaas zijn we nog niet alleen<br>Een aanraking, subtiele tinteling</p><p>De passagier stapt uit<br>Alvorens de liftdeuren sluiten<br>Druk ik je ruw tegen de wand<br>Dierlijk, impulsief niet te stuiten</p><p>Mijn mond ontmoet de jouwe<br>Smeltend hart gaat tekeer<br>Vluchtige blikken in mijn ogen<br>Dit moment smaakt naar meer</p><p>Mijn stoppels schuren in je nek<br>Handen omvatten daadkrachtig je zij<br>Geen woord en toch weet ik zeker<br>Dit korte moment ben je van mij</p><p>De liftdeur gaat open<br>Ik stap uit ergens op drie<br>Achterom kijkend vertwijfeld<br>Was dit realiteit of wilde fantasie?</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Af en toe schrijf je ook wel eens gedichten die… nouja… gebaseerd zijn op fantasie. Of was dit toch de realiteit?&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+      <category term="poem" scheme="http://blog.jeltelagendijk.nl/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Poem: The mountain</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/06/poem-mountain/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/06/poem-mountain/</id>
+    <published>2014-06-30T19:00:29.000Z</published>
+    <updated>2014-06-30T19:00:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Just my line of thoughts when helping a friend or loved one.</p><a id="more"></a><blockquote><p>Whenever the mountain seems endlessly high<br>The summit, far up there in the sky<br>Your legs are tired, your feet are sore<br>Thinking you can’t take it anymore</p><p>Stop for a second, take a moment of rest<br>That fictional mountain puts your mind to the test<br>Close your eyes and visualize the way<br>You can’t reach the summit, just in one day</p><p>I am right behind you, pointing at the clouds<br>Without fear, without a stream of doubts<br>You can’t fall, neither can I<br>All of a sudden, that mountain isn’t that high</p><p>Take my hand, feel the connection, positive energy<br>We climb steady together, you and me<br>No obstacle that can make me stop<br>Let’s beat the mountain, right to the top!</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Just my line of thoughts when helping a friend or loved one.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+      <category term="poem" scheme="http://blog.jeltelagendijk.nl/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ik ben een denker</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/06/ik-ben-een-denker/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/06/ik-ben-een-denker/</id>
+    <published>2014-06-26T10:26:21.000Z</published>
+    <updated>2014-06-26T10:26:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Het is inmiddels een uur of half een in de nacht, verwikkeld in een diepgaand gesprek. Het is de enige persoon die mij <a href="http://jeltelagendijk.nl/2014/06/advies-hou-je-mond/" title="Advies, wanneer wel en wanneer hou je je mond…" target="_blank" rel="external">ongevraagd advies</a> mag geven. Sterker nog, ik verwacht het. Het is een gewoonte, een gedachtewisseling die op een dieper niveau gaat dan ik met menigeen heb.</p><blockquote><p><em>“Joh, ik denk gewoon veel teveel na over dit ‘probleem’. Mijn hoofd maakt overuren. Het verschil tussen gevoel en ratio is ver te zoeken, er is een onbalans. Ik trek conclusies die nergens op gebaseerd zijn. What the fuck?”</em></p><p>Een korte stilte.</p><p><em>“ Hier zijn wat tips […]. Jelte, dat is de downside van een denker zijn. Jij en ik zijn daarin hetzelfde. Je bent een denker.”</em></p></blockquote><a id="more"></a><p>Ken je dat stemmetje? Men noemt het ook wel eens het stemmetje in je hoofd. In films wordt het meestal uitgebeeld door twee verschijningen: De engel en de duivel. De engel staat meestal voor de ratio, die ‘verstandige’ beslissingen neemt. De duivel staat voor dat stemmetje dat je meestal vertelt: “Fuck it, doe het gewoon. Doe het.”</p><p>Weet je waar dit stemmetje opduikt? Meestal bij de onverstandige beslissingen. De triggers zijn overal, zonder dat je het van tevoren door hebt. Neem bijvoorbeeld een supermarkt. Men loopt naar binnen, met een lege maag. Nu weet je als weldenkend mens dat je eigenlijk de gezonde dingen zou moeten halen. Voor je het weet sta je echter buiten met de koekjes, de chips en die fles wijn. Waarom? Het stemmetje vertelt je: “Ah joh, boeiend. Vandaag mag je zondigen. Kan wel joh”.</p><p>Het is een praktisch voorbeeld dat ik schets, die voor menigeen opgaat. Het is ook iets wat naar mijn idee emotioneel leed teweeg brengt. Je gevoel van zelfdiscipline word ermee ondermijnd, vaker dan je zou willen. Er komt een gevoel naar boven dat zegt en of vraagt: “Alweer? Wat is dat toch? Waar zit m’n verstand?”. Je ratio veinst een schuldgevoel.</p><p>We weten allemaal dat het stemmetje er zit, hij is er altijd. We willen het eigenlijk niet al teveel plek geven, want het zegt af en toe dingen die soms volledig haaks staan op je overtuigingen. Op je principes. We willen ‘verstandig’ zijn, er is aan de andere kant veel sprake van ‘onverstandig’ gedrag.</p><h2 id="Zen"><a href="#Zen" class="headerlink" title="Zen"></a>Zen</h2><p>Ik grijp terug op iets dat ik heb geleerd uit <a href="http://buddhism.about.com/od/chanandzenbuddhism/a/zen101.htm" title="Zen in Buddhism" target="_blank" rel="external">Zen</a>. Misschien dat ik in de toekomst hier nog wat uitgebreider over vertel, voor nu zal je het moeten doen met de volgende (vrije interpretatie) uitspraak:</p><blockquote><p><strong>That what is, is. Suffering comes from not accepting the things that are. Resisting usually creates the opposite of that what you desire.</strong></p></blockquote><p>Het viel als een puzzelstuk op z’n plaats, in deze situatie. Ik poogde voor dat moment eigenlijk dat stemmetje weg te drukken, zodat m’n ratio zou overheersen (wat voor de niet-genoemde sitatie het beste zou zijn naar mijn idee, een bewuste keuze). Echter, met het wegdrukken (resistance), creëer je het tegenovergestelde. Ken je het voorbeeld van de <a href="http://www.watoday.com.au/federal-politics/a-fascination-with-fire-is-elementary-20090309-8t91.html" title="The Pink Elephant" target="_blank" rel="external">roze olifant</a>? Nee? Als ik tegen jou zeg “Ik wil dat je nu NIET denkt aan een roze olifant”, waar denk je dan aan?</p><p>Juist. Het is zoals het brein werkt, en dat zal je moeten accepteren.</p><p>Dat was het moment. Het moment waarop ik dacht: <em>“Natuurlijk, dat stemmetje is er altijd. Hoe harder ik hem wegdruk, des te harder gaat hij schreeuwen. Laat hem even praten, laat de ratio verder de verstandige beslissingen nemen.”</em></p><p>Ik ben een denker. Met acceptatie over hoe ons denken werkt, wordt het een stuk makkelijker om bepaalde dingen te accepteren zoals ze zijn. Of denk ik nu iets teveel?</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Het is inmiddels een uur of half een in de nacht, verwikkeld in een diepgaand gesprek. Het is de enige persoon die mij &lt;a href=&quot;http://jeltelagendijk.nl/2014/06/advies-hou-je-mond/&quot; title=&quot;Advies, wanneer wel en wanneer hou je je mond…&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ongevraagd advies&lt;/a&gt; mag geven. Sterker nog, ik verwacht het. Het is een gewoonte, een gedachtewisseling die op een dieper niveau gaat dan ik met menigeen heb.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Joh, ik denk gewoon veel teveel na over dit ‘probleem’. Mijn hoofd maakt overuren. Het verschil tussen gevoel en ratio is ver te zoeken, er is een onbalans. Ik trek conclusies die nergens op gebaseerd zijn. What the fuck?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Een korte stilte.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“ Hier zijn wat tips […]. Jelte, dat is de downside van een denker zijn. Jij en ik zijn daarin hetzelfde. Je bent een denker.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="psychology" scheme="http://blog.jeltelagendijk.nl/tags/psychology/"/>
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Advies, wanneer wel en wanneer houd je je mond...</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/06/advies-hou-je-mond/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/06/advies-hou-je-mond/</id>
+    <published>2014-06-25T00:11:00.000Z</published>
+    <updated>2014-06-25T00:11:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p><em>Een lang verhaal aan de telefoon. Bij mij was er de dagen ervoor een grote mate van vraagtekens omhoog gekomen omdat ik bepaalde dingen simpelweg niet kon plaatsen. Het verhaal begon met een aantal argumenten, waar ik over moest nadenken. De eindconclusie eindigde in een vraag naar mij toe, althans een vraag die ik mezelf stelde vanuit het oogpunt van de ander: “Jelte, probeer je me te veranderen?”</em></p></blockquote><a id="more"></a><p>We veranderen allemaal door de tijd heen (zie <a href="http://jeltelagendijk.nl/2014/06/veranderingen/" title="Veranderingen" target="_blank" rel="external">hier</a>), hier zijn we zelf verantwoordelijk voor. Je kunt simpelweg anderen niet veranderen. Het verschil, ‘<a href="http://en.wikipedia.org/wiki/Locus_of_control" target="_blank" rel="external">locus of control</a>‘, haakt in op de mate van controle die je hebt over alles in het leven. Een van de belangrijkste lessen die ik heb geleerd in het verleden, is dat je geen invloed hebt op hoe anderen denken of zijn. Eigenlijk heel simpel. 100% controle over jezelf, 0% controle over een ander.</p><p>Hou er dus ook niet van om mensen te vertellen wat ze moeten doen. Ik heb het liefst dat ik vragen stel en een ander laat nadenken erover. Echter, er is ook een tijd dat je gewoon simpelweg je mond moet houden. Dat men niet zit te wachten op je ‘wijsheid’…</p><p>Dat was dan ook de strekking van het hele verhaal. Steeds luisteren naar iemands verhaal als bepaalde dingen niet goed gingen, en vrijwel elke keer een poging hierbij een goed bedoeld advies te geven. Dat begon dan meestal met “Nou weet je, ik heb dit zo en zo gedaan”, of “Ja wat nou als je dit zo en zo doet?”. Tot frustratie van de ander, zo bleek uit het telefoongesprek. En dat was de eye-opener. Het ‘aha’-moment. Ik deed naar mijn idee niets ‘fout’ (aangezien het goed bedoeld was), het was op dat moment echter wel ‘fout’.</p><p>De kritiek was gegrond, de directe feedback een leuke les. Over het algemeen genomen was mijn positieve en plat geformuleerde interpretatie van de eindconclusie dan ook: “Jelte, je moet weten wanneer je je kop moet houden”.</p><h2 id="Een-paar-tips-over-advies"><a href="#Een-paar-tips-over-advies" class="headerlink" title="Een paar tips over advies"></a>Een paar tips over advies</h2><ul><li><em><strong>Advies geven, alleen wanneer men er om vraagt</strong></em></li></ul><p>Dit is eigenlijk de belangrijkste van de tips en lessen. Het is, als iemand problemen heeft, heel erg verleidelijk om de amateur psycholoog te spelen. Dit mag dan goed bedoeld zijn, je weet van tevoren niet of iemand advies wil. Vraag of iemand zit te wachten op advies, mocht je dat willen geven.</p><ul><li><em><strong>Wees eerlijk met je advies</strong></em></li></ul><p>Mensen zijn heel snel geneigd om te zeggen “Ik begrijp wat je bedoelt”, terwijl dat wellicht helemaal niet zo is. Empathie is fijn, je moet echter wel eerlijk zijn. Woorden (vanuit de optiek van <a href="http://nl.wikipedia.org/wiki/Neurolingu%C3%AFstisch_programmeren" title="NLP on Wikipedia" target="_blank" rel="external">NLP</a>) zijn krachtig, weet dus welke je wel en welke je niet kunt gebruiken.</p><ul><li><em><strong>Oordeel niet</strong></em></li></ul><p>Als men om je advies vraagt, probeer niet te oordelen. Als je zegt “Je had dit moeten doen…” of iets dergelijks, is dat vooral een oordeel i.p.v. open advies. Frame dit wellicht op een manier als: “Ik had wellicht [..] gedaan, want naar mijn idee [..]”. Het geeft meer aan wat jij zou hebben gedaan, je onderstreept niet wat iemand naar jouw idee ‘fout’ heeft gedaan.</p><ul><li><strong><em>Luister en geef mensen de ruimte om gewoon hun hart te luchten</em></strong></li></ul><p>Dit grijpt terug op het eerste punt. Wees terughoudend, als je merkt dat iemand gewoon zijn/haar hart wil luchten. Vaak lucht het voor de persoon vooral op om even een woordje te doen. Dan zit diegene niet te wachten op ‘advies’, maar wil gewoon dat je luistert.</p><p>Uit bovenstaande punten zijn het eerste en laatste vooral op mijzelf van toepassing geweest. In het stukje zelfreflectie, achteraf, kwam ik erachter dat ik dit in het verleden vaker heb gedaan. Hiermee duw je sommige mensen weg.</p><p>Adviseren kun je leren, zwijgen en luisteren ook. Of, zoals een van de onderstaande bronnen suggereert:</p><blockquote><p><strong>“Separate the person from trying to help them solve their problems. Be there to support the person but don’t try to help them solve their problems unless asked.”</strong></p></blockquote><p>Heb je zelf nog meer tips? Laat het weten!</p><p>Bronnen:<br><a href="http://crucialhabits.com/give-advice-to-people.html" title="Give advice to people" target="_blank" rel="external">http://crucialhabits.com/give-advice-to-people.html</a><br><a href="http://tinybuddha.com/blog/10-tips-advise-wisely-how-to-give-advice-that-actually-helps/" title="How to give advice that actually helps" target="_blank" rel="external">http://tinybuddha.com/blog/10-tips-advise-wisely-how-to-give-advice-that-actually-helps/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Een lang verhaal aan de telefoon. Bij mij was er de dagen ervoor een grote mate van vraagtekens omhoog gekomen omdat ik bepaalde dingen simpelweg niet kon plaatsen. Het verhaal begon met een aantal argumenten, waar ik over moest nadenken. De eindconclusie eindigde in een vraag naar mij toe, althans een vraag die ik mezelf stelde vanuit het oogpunt van de ander: “Jelte, probeer je me te veranderen?”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="psychology" scheme="http://blog.jeltelagendijk.nl/tags/psychology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Veranderingen</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/06/veranderingen/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/06/veranderingen/</id>
+    <published>2014-06-24T12:35:54.000Z</published>
+    <updated>2014-06-24T12:35:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Ik nodig je uit om 7 minuten te kijken naar onderstaande video. Het is een TED talk van <a href="http://www.ted.com/speakers/dan_gilbert" title="Dan Gilbert on TED" target="_blank" rel="external">Dan Gilbert</a>, genaamd “The psychology of your future self”.</p><a id="more"></a><center><iframe src="https://embed-ssl.ted.com/talks/dan_gilbert_you_are_always_changing.html" width="640" height="360" frameborder="0" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></center><p>Hij is humoristisch, hij heeft echter een belangrijk punt. En dit punt zie ik terug in mijn eigen overtuigingen, alsmede hoe ik denk dat anderen denken.</p><p>In hoeverre denk jij over tien jaar nog hetzelfde te zijn dan dat je nu bent? En nog belangrijker, denk jij dat anderen nog hetzelfde zijn over zoveel jaar? We vergeten vaak dat we niet “af” zijn. Er is geen sprake van een moment dat je “af” bent. Hoe je nu bent, is hoe je nu bent. En dat zegt niets over hoe je over een half jaar, een jaar, 5 jaar of 10 jaar bent. We zijn dynamisch, net als de rest van deze planeet en sterker nog, het universum. We zijn aan veranderingen onderhevig, en hebben voor een groot deel ook zelf in de hand hoe we willen veranderen.</p><p>Ik nodig je uit om de video te kijken. Het is een eye-opener. De mooiste uitspraak gaat bij mij in m’n boek aan quotes:</p><blockquote><p><em><strong>Human beings are works in progress that mistakenly think they’re finished.</strong></em></p></blockquote><p>It says it all!</p><p>Source : <a href="http://www.ted.com/talks/dan_gilbert_you_are_always_changing" title="Dan Gilbert - You are always changing" target="_blank" rel="external">TED</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Ik nodig je uit om 7 minuten te kijken naar onderstaande video. Het is een TED talk van &lt;a href=&quot;http://www.ted.com/speakers/dan_gilbert&quot; title=&quot;Dan Gilbert on TED&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dan Gilbert&lt;/a&gt;, genaamd “The psychology of your future self”.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="psychology" scheme="http://blog.jeltelagendijk.nl/tags/psychology/"/>
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Een opgeruimd leven...</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/06/een-opgeruimd-leven/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/06/een-opgeruimd-leven/</id>
+    <published>2014-06-23T14:15:54.000Z</published>
+    <updated>2014-06-23T14:15:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Dit keer even niet over m’n rules. Neen, het ligt even stil. Niet qua mindset, vooral qua prioriteit. Ik maak me geen zorgen, de voortzetting van mn <a href="http://jeltelagendijk.nl/2014/05/rules-het-begin/" title="The rules… Het begin" target="_blank" rel="external">30 rules</a> komt snel. Er waren echter andere dingen die eerst getackled moesten worden. En dat is een proces dat zich al aan het voortzetten is de afgelopen paar weken. Eentje die me aan het hart gaat.</p><a id="more"></a><p>Laat ik allereerst iets zeggen over hoe ik ben. Als je mijn blog gelezen hebt tot nu toe, zie je een bepaald patroon. Nee, juist niet. Er was geen peil op te trekken. De ene keer gaat het over cyber security, dan gaat het weer over programmeren, dan weer over lifehacking. Het zijn mijn passies, alleen was er weinig consistentie in te vinden. In de essentie van mijn ‘zijn’, heb ik een aantal krachtige punten, en een aantal zwakke punten. We zijn tenslotte allemaal mens, nietwaar? (Zo’n heerlijke cliché uitspraak dat nog net geen ‘<a href="http://jeltelagendijk.nl/2014/05/rules-sorry/" title="Sorry :: The rules" target="_blank" rel="external">sorry</a>‘ is) Een van mijn eigenschappen is chaos. Dat heb ik al lang geleden onderkend, ik heb er alleen nooit iets mee gedaan. Althans, niet bewust. Tot een paar weken geleden…</p><p>Chaos is overal eigenlijk. Zonder een aantal strikte regels en overtuigingen, alsmede richtlijnen, zou het leven eigenlijk één grote chaos zijn… Het internet en de media draagt hier aan mee. Als mensen worden wij dagelijks gebombardeerd met informatie. Het is makkelijk om jezelf hierin te verliezen. We worden blootgesteld aan reclame op TV, we klikken door op de blogposts op Facebook, we worden overstelpd met productplacement en kortingen in de supermarkt, etcetera. Het gevolg: een information overload! Als bijna een zombie door het leven gaan door het bombardement aan prikkels. Nu schets ik dit wellicht een tikje zwart-wit, in essentie lijkt me dit een goede analogie…</p><p>Tot een aantal weken geleden dacht ik dat ik het voor elkaar had. Een prima baan, nog zoekende naar de ware, een paar goede vrienden, een lifestyle. En toch miste er iets… Of liever gezegd, er was iets teveel. De chaos. De chaos om me heen die een <a href="http://www.infogineering.net/understanding-information-overload.htm" title="Understanding information overload" target="_blank" rel="external">information overload</a> teweeg bracht. Mezelf kennende, en de technieken, zocht ik naar een antwoord. Meditatie, het rustpunt zoeken. “Laat het antwoord komen, laat je brein het werk doen…”. Het antwoord op deze chaos. En het antwoord kwam snel.</p><p>Mijn vraag aan jou is dan ook: Hoe opgeruimd is jouw leven? Het eerste wat me opviel was de chaos waarin ik zat. Als we het over materialisme hebben, dan is dat mijn huis. Het leek aan de oppervlakte opgeruimd, niets was minder waar. Spullen die ik niet meer gebruikte, lagen opgeslagen. De enige reden dat ik ze bewaarde was “hier heb ik wellicht, ooit, in deze situatie, nog wat aan”. De papierwinkel die stof lag te happen was van hetzelfde kaliber. Papieren of brieven die ik nog moest lezen, of gewoonweg diende te bewaren.</p><p>Ik trek het echter nog verder. Enig idee hoeveel TV je kijkt per dag? Wat is er meer zinloos dan naar een scherm te kijken dat licht uitzendt, onder het mom van ‘entertainment’, zonder enige input van jezelf? Niks toch? Ja. natuurlijk, het is ‘leuk’, het is alleen weinig productief? Hier moet ik overigens een kanttekening bij maken, met betrekking op de actualiteit. Ook ik kijk wel eens TV, althans één keer de laatste tijd. Het WK. Natuurlijk kijk ik het Nederlands elftal en geniet ik daarvan. Het enige verschil met ‘normaal tv kijken’? Je doet dit met anderen! Samen iets kijken, de vreugd of de lol delen. Dat is het enige leuke aan TV kijken, mét anderen.</p><p>Hoeveel mails liggen er nog te wachten? Hoeveel taken zijn er nog open? Welke dingen stel je uit? Dat zijn de vragen die ik mezelf stelde. Het antwoord was in 1 simpel antwoord te formuleren: “teveel!”. En dus begint het opruimen. Alles, maar dan ook alles opruimen.</p><p>Het opruimen begon een aantal weken geleden pas echt. De kabel is uit de TV getrokken, de papieren zijn ingescand en weggegooid en elke kast heeft al een goede opruimbeurt gehad. Alle mails zijn uit m’n mailbox verdwenen, alle zinloze pagina’s op Facebook disliked en zelfs m’n phone begint leeg te raken. Recepten zijn gearchiveerd, ik heb een lijst met m’n boeken die ik wil lezen, heb een overzicht van de audiobooks die ik wil luisteren. De financiën zijn gebudgetteerd, de afwas is gedaan, de vuilniszakken de deur uit… Ik weet exact wat ik op mijn werk moet doen, welke zaken prioriteit hebben, welke mails moeten worden beantwoord…</p><p>Hoe leger je leven is, als het gaat om afleidingen en onzinnige dingen, des te meer rust creëer je. Hoe meer rust je creëert, hoe beter de overzichten zijn. En hoe beter het overzicht in je leven, des te opgeruimder ben je…</p><p>De cliché uitspraak: “Een opgeruimd huis, is een opgeruimd hoofd”.</p><p>Laten we het breder trekken…</p><p><em><strong>“Een opgeruimd leven, is een opgeruimd hoofd”. Tijd, energie en ruimte voor de volgende uitdaging!</strong></em></p><blockquote><p>De gadget- en technologiefanaat die ik ben, geniet ik van de geneugten die technologie me bied hierin. Twee dingen die in het einde van deze blogpost met je deel, als onderdeel van het GTD (Getting Things Done) proces met je deel:</p><p>1.) <a href="https://www.gmail.com/mail/help/tasks/" target="_blank" rel="external">Google Tasks</a>. Ik maak zelf gebruik van “<a href="https://play.google.com/store/apps/details?id=com.appgenix.biztasks" title="Google Play Store :: Business Tasks" target="_blank" rel="external">Business Tasks</a>“, een app voor Android. Het fijne aan deze app, naast dat het gratis is, is de mate van flexibiliteit. Subtaken aanmaken, reminders, het zit er allemaal in. En dus neem ik deze app als de heilige graal en maak hier dagelijks gebruik van. Orde in de chaos scheppen begint met het structureren van lijsten. De developer die ik ben, maak ik daarbij ook gebruik van een aantal <a href="http://www.scrum.nl/site/Scrum-Begrippen-agile-scrum" title="Scrum begrippen" target="_blank" rel="external">SCRUM</a> termen: Mijn lijst met zaken die geen prioriteit hebben, gaan op, wat men noemt, de ‘backlog’. Alles wat prioriteit heeft, staat op de dagelijkse TODO. En het is een uitdaging om die dagelijkse lijst leeg te krijgen. Dat creeert rust!</p><p>2.) <a href="https://www.lift.do/app/users/15beb999ed5c07c6cc4d" title="Jelte Lagendijk on Lift" target="_blank" rel="external">Lift</a>. Ik grijp hier terug op een blogpost die ik in <a href="http://jeltelagendijk.nl/2013/01/challenge-accepted/" title="Challenge… accepted" target="_blank" rel="external">januari 2013</a> schreef. Het gaat daarin om de 30-day-challenge. De app Lift (Het is een web-app, hij is ook voor <a href="https://play.google.com/store/apps/details?id=com.liftworldwide.lift" title="Google Play Store :: Lift" target="_blank" rel="external">Android</a> te vinden), is eentje die inhaakt op het idee van een dergelijke challenge, namelijk het veranderen, danwel aanleren van een gewoonte. Wat het met name doet is je dagelijkse reminders geven. En ik ben dus bezig met een aantal challenges, de belangrijkste is “Unclutter” (opruimen).</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Dit keer even niet over m’n rules. Neen, het ligt even stil. Niet qua mindset, vooral qua prioriteit. Ik maak me geen zorgen, de voortzetting van mn &lt;a href=&quot;http://jeltelagendijk.nl/2014/05/rules-het-begin/&quot; title=&quot;The rules… Het begin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;30 rules&lt;/a&gt; komt snel. Er waren echter andere dingen die eerst getackled moesten worden. En dat is een proces dat zich al aan het voortzetten is de afgelopen paar weken. Eentje die me aan het hart gaat.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="psychology" scheme="http://blog.jeltelagendijk.nl/tags/psychology/"/>
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sorry :: The rules</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/05/rules-sorry/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/05/rules-sorry/</id>
+    <published>2014-05-25T21:52:17.000Z</published>
+    <updated>2014-05-25T21:52:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Langzaam aan begon het tot me door te dringen. Het was een dinsdagavond, pakweg 2 jaar geleden. De mindmap, een overzicht van problematiek die ik op dat moment ondervond, was in de verste verte nog niet af. Steekwoorden hier en daar, verbindingen naar belangrijke onderwerpen en vooral “wat wil ik nog meer?”. Ieder punt was te benoemen, ik had sowieso een aantal zaken die ik graag wilde in mijn leven. En toch, toch was het er nog niet van gekomen. De vraag die ik mezelf stelde, terwijl mijn blik verdwaald raakte in de wirwar van connecties bij elk onderwerp, was een standaardvraag: “Waarom heb je dit nog niet? Hoezo niet?”. De denkbeeldige kritische jury stond voor me en bekogelde me met vragen. Het antwoord op alle vragen begon met…. “Ja sorry, maar…”</p><a id="more"></a><p>Hoe vaak zeggen we “sorry” in ons leven? Neem een moment en sta er eens bij stil. Stel jezelf de vraag: “Wanneer is de laatste keer dat ik sorry heb gezegd? En dat moment, was dat een échte sorry?”</p><p>Ik begon mezelf dit af te vragen… Wanneer zeg je eigenlijk het woord sorry? En wat is de betekenis ervan?</p><p>Een moment van zelfreflectie die ik tot dan toe niet had ervaren. Het patroon was ineens herkenbaar, het was een stopwoordje geworden. De zin begon met een sorry, of eindigde ermee. Niet alleen ten opzichte van anderen, tevens naar mezelf. Vooral dat laatste speelde ineens een cruciale rol. Door excuses aan te bieden aan jezelf, praat je je eigen falen of inactiviteit daarmee goed. Verzachtende woorden naar jezelf toe. Het gaat echter nog verder. De vorm van onzekerheid die ik met me mee droeg, vertaalde zich ook naar een groeiend aantal keer sorry zeggen naar anderen toe. En die vertaling was niet eens letterlijk. Meer het gevoel dat je in je hoofd sorry moet zeggen dat je bepaalde dingen op een dergelijke manier doet. De juiste zin bij dit gevoel zou zijn: “Sorry, zo ben ik nu eenmaal. Sorry voor mijn gedrag.”</p><p>Ik ben ermee gestopt. In de lessen die ik leerde uit o.a. NLP, ben ik kritisch gaan kijken naar het taalgebruik. Naast het woordje “maar” (wat een eventueel vervolg krijgt qua uitleg, daar het woord “maar” een krachtige doch negatieve betekenis heeft) vermijd ik het woord “sorry” enorm. En dat heeft een impact op je eigenwaarde, alsmede hoe anderen naar je kijken. Laten we het uiteindelijk nog, in het kort, iets beter bekijken:</p><p>Waarom zou je “sorry” moeten zeggen voor het feit dat je zo bent? Waar het op neerkomt is dat als je dit vaak genoeg zegt, het een self fulfilling prophecy wordt. Je gaat er zelf in geloven, terwijl je veel meer waard bent dan dat… We hebben niet voor niets het woord “sorry” opgenomen in ons woordenboek. Stammend uit het oud Engels “sarig”, dat (in het Engels) vertaald wordt als <a href="http://www.etymonline.com/index.php?search=sorry" title="Etymology Dictionary :: sorry" target="_blank" rel="external">“distressed, grieved, full of sorrow”</a>.</p><p>De enige keren dat je naar mijn idee “sorry” dient te zeggen naar een ander toe, is als het gemeend is. Dat je iets doet wat een ander geschaad, beledigd of gekwetst heeft. Uitsluitend dan is het zaak dat je sorry zegt. Een oprechte excuses, die voortkomt uit een schuldgevoel. Dat je weet dat je iets fout hebt gedaan. Dat is dus de gezonde en oprechte uitzondering op mijn regel “zo min mogelijk sorry zeggen”.</p><h2 id="The-rule-“Sorry”"><a href="#The-rule-“Sorry”" class="headerlink" title="The rule “Sorry”:"></a>The rule “Sorry”:</h2><p>De uiteindelijke conclusie van de vragen, alsmede de betekenis van het woord, leidde tot de simpele regel:</p><blockquote><p><strong>“Zeg zo min mogelijk ‘sorry.’ Hoe minder vaak je dat woord gebruikt, des te krachtiger is de boodschap als je het wel zo bedoelt”</strong></p></blockquote><p>Simpel.</p><p>Hoe minder vaak je sorry zegt en het woord dus zeer bewust en beperkt gebruikt, des te groter is de impact van het woord als je het wél zegt. Niet alleen naar anderen toe, zeker ook naar jezelf toe. Voor mij is dit een heldere regel, daarom is hij ook opgenomen in de reeks met regels die ik publiceer (n.a.v. <a href="http://jeltelagendijk.nl/2014/05/rules-het-begin/" title="The rules… Het begin" target="_blank" rel="external">deze blogpost</a>).</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Langzaam aan begon het tot me door te dringen. Het was een dinsdagavond, pakweg 2 jaar geleden. De mindmap, een overzicht van problematiek die ik op dat moment ondervond, was in de verste verte nog niet af. Steekwoorden hier en daar, verbindingen naar belangrijke onderwerpen en vooral “wat wil ik nog meer?”. Ieder punt was te benoemen, ik had sowieso een aantal zaken die ik graag wilde in mijn leven. En toch, toch was het er nog niet van gekomen. De vraag die ik mezelf stelde, terwijl mijn blik verdwaald raakte in de wirwar van connecties bij elk onderwerp, was een standaardvraag: “Waarom heb je dit nog niet? Hoezo niet?”. De denkbeeldige kritische jury stond voor me en bekogelde me met vragen. Het antwoord op alle vragen begon met…. “Ja sorry, maar…”&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="psychology" scheme="http://blog.jeltelagendijk.nl/tags/psychology/"/>
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The rules... Het begin</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/05/rules-het-begin/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/05/rules-het-begin/</id>
+    <published>2014-05-04T22:45:52.000Z</published>
+    <updated>2014-05-04T22:45:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p><em>Het is een donderdagavond, een uurtje of negen. Op Whatsapp heb ik een discussie met Annemarie, het gaat onder andere over bloggen. We hebben het over doelen stellen, over bloggen en wat het inhoudt. Gaandeweg het gesprek, waarin zij advocaat van de duivel speelt en me begint te bombarderen met vragen, die veelal beginnen met “waarom”, begint er bij mij een beeld te ontstaan. Het beeld van een reeks blogposts die al een jaar lang op de boekenplank stof liggen te happen in de vorm van ideeën en half geschreven verhalen.</em></p><p><em>“Verdomme, je hebt gelijk. Ik moet hier iets mee gaan doen!”, app ik met een glimlach. Dat doorvragen… Een beproefde methode om mijn chaotische hoofd met Rotterdamse mentaliteit (“Zeg gewoon wat je denkt”) flink te triggeren. And so it begins!</em></p></blockquote><a id="more"></a><h2 id="Het-begin-van-een-lang-proces"><a href="#Het-begin-van-een-lang-proces" class="headerlink" title="Het begin van een lang proces"></a>Het begin van een lang proces</h2><p>Een kleine achtergrondschets is op zijn plaats, voor de komende blogreeks…</p><p>Het is een jaar of tweeënhalf geleden dat ik hieraan begon, “The rules”. Ik was kort voor het begin van het proces een psychologisch wrak. Werkloos geweest voor twee maanden. M’n liefdesleven was met een duikvlucht neergestort. Met name de manier waarop leidde tot een zwaar verminderd zelfbeeld. Er werden naar mijn gevoel een aantal fundamenten van mijn leven weggeslagen op dat moment. De rollercoaster was al ingezet een half jaar ervoor. Een beperkte relatie met mijn ouders (door ruzie waar ik zelf voor het grootste deel debet aan was), een half afgemaakte studie, een studieschuld, een ongezonde emotionele situatie en een verkeerde lifestyle.</p><p>Al met al, op z’n zachtst gezegd, een behoorlijke kutsituatie.</p><p>Langzaam ging het beter. De relatie met m’n ouders was hersteld, ik had een nieuwe baan en dus stabiliteit. Al met al leek het dus aan de buitenkant goed te gaan. Mensen zagen me als happy, ik liep rond met een smile en aan de oppervlakte leek het dus oké. Desalniettemin knaagde er iets. Het gevoel van controle kwam langzaam terug, alleen manifesteerde zich nog niet als dusdanig dat ik een doel voor ogen had. Levensdoelen, so to speak. Een set met regels en motto’s die mij definieerde…</p><h2 id="Vrienden"><a href="#Vrienden" class="headerlink" title="Vrienden"></a>Vrienden</h2><p>Vrienden kies je. En ze kiezen ze jou. Ik geloof niet in ‘het lot’, ik geloof echter wel dat er momenten zijn dat je de juiste personen, op het juiste moment, leert kennen. Met dezelfde interesse voor psychologie, een positieve attitude, en met het advies dat ongedwongen wordt gegeven. Juist die vrienden boorden op dat sleutelmoment een belangrijk speerpunt aan: Een doel voor ogen hebben, levenslust en energie. De stijgende lijn.</p><h2 id="The-rules"><a href="#The-rules" class="headerlink" title="The rules"></a>The rules</h2><p>Er moest iets gebeuren. De boeken in duiken, meningen van anderen vragen en een open dialoog aan gaan met vrienden. Het besluit “en zo kan het niet langer”, was genomen.</p><p>Het leidde uiteindelijk tot, wat ik zelf noem: “The rules”. Gegeven dat je uit een diep dal komt, is het aan jezelf om je weer op te bouwen. Geen enkel persoon kan dit voor je doen, je bent een volwassene die uiteindelijk zelf de verantwoordelijkheid draagt voor je eigen geluk. En daar heb je houvast bij nodig… Principes… Een set met heldere regels.</p><p>In een proces van wederopbouw heb ik in een jaar tijd mijn leven geherdefinieerd. Dit roept vragen op. Een vragende blik, gevolgd door schamper gelach: “Hoezo herdefiniëren? Je bent toch gewoon wie je bent?”. Natuurlijk, ik ben nog steeds dezelfde persoon. De regels, principes en het speelveld zijn echter veranderd. Waar er eerst een gemis in controle was en voelde als een langdurige emotionele groeistagnatie, begonnen de “regels” aangescherpt te worden en een belangrijke houvast te bieden. Het gevolg: Controle over je eigen geluk, een stijgende lijn in blijdschap en een nog belangrijker: een groei in emotionele volwassenheid.</p><h2 id="Het-doel"><a href="#Het-doel" class="headerlink" title="Het doel"></a>Het doel</h2><p>Het is inmiddels al een tijd geleden dat ik begonnen ben met “The rules”, en ben op een punt beland dat ik ze wil delen. Mijn doel is helder: Ik wil mijn kennis en  mening delen. Zie mij niet als autoriteit op het gebied van personal development, ik vertel mensen niet “Zo moet het”. Het is een poging tot een bijdrage leveren aan zelfinzicht. En zelfinzicht is naar mijn idee de belangrijkste factor voor persoonlijke groei. Als ik ook maar 1 persoon kan helpen met mijn mening en verhaal… dan is mijn doel bereikt.</p><p>Ik hoor ook graag de mening van anderen, dit is een interactie. Reageer waar nodig, en bouw mee aan jouw, en mijn, zelfinzicht!</p><p>Tot dusver mijn intro. Nu komt het erop aan… Het schetsboek ligt klaar, de aantekeningen worden uit de kast gehaald en ik stof mijn concepten af. Let’s do this!</p><p><em><a href="https://twitter.com/AnnemarieLindeb" title="Annemarie Lindeboom on Twitter" target="_blank" rel="external">Annemarie</a> is blogger voor o.a. Suksawat in Leeuwarden. Ze heeft haar eigen bedrijf “<a href="http://letterlijkeverleiding.wordpress.com/" title="Letterlijke verleiding" target="_blank" rel="external">Letterlijke Verleiding</a>“, en de methode die ze toepaste, door blijven vragen over mijn doelen en het “waarom?”, hebben uiteindelijk mij ertoe gezet om mijn initiatief nieuw leven in te blazen. Ik wil haar bedanken voor die trigger!</em></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Het is een donderdagavond, een uurtje of negen. Op Whatsapp heb ik een discussie met Annemarie, het gaat onder andere over bloggen. We hebben het over doelen stellen, over bloggen en wat het inhoudt. Gaandeweg het gesprek, waarin zij advocaat van de duivel speelt en me begint te bombarderen met vragen, die veelal beginnen met “waarom”, begint er bij mij een beeld te ontstaan. Het beeld van een reeks blogposts die al een jaar lang op de boekenplank stof liggen te happen in de vorm van ideeën en half geschreven verhalen.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Verdomme, je hebt gelijk. Ik moet hier iets mee gaan doen!”, app ik met een glimlach. Dat doorvragen… Een beproefde methode om mijn chaotische hoofd met Rotterdamse mentaliteit (“Zeg gewoon wat je denkt”) flink te triggeren. And so it begins!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="psychology" scheme="http://blog.jeltelagendijk.nl/tags/psychology/"/>
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title> Git. Learn to branch, command-line....</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/03/learn-git/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/03/learn-git/</id>
+    <published>2014-03-20T13:27:50.000Z</published>
+    <updated>2014-03-20T13:27:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Push, pull, branch, pull requests, cherry-picking… No, these words do not come from some sort of bad C-rated adult movie… These are terms I work with on a daily basis, using <a href="http://en.wikipedia.org/wiki/Git_(software" target="_blank" rel="external">Git</a> “Git on Wikipedia”). In the past I have worked with <a href="http://en.wikipedia.org/wiki/Subversion_(software" target="_blank" rel="external">Subversion</a> “Subversion on Wikipedia”), which was a total nightmare (in my humble opinion ofcourse, I do not want to offend people who like SVN). Version control comes in many flavors. Lately I have been working in several teams on various big projects, and so the need for version control of your code is necessary.</p><a id="more"></a><h2 id="Git-GUI"><a href="#Git-GUI" class="headerlink" title="Git GUI:"></a>Git GUI:</h2><p>Personally, I like <a href="http://www.sourcetreeapp.com/" title="SourceTree" target="_blank" rel="external">SourceTree</a>, made by <a href="https://www.atlassian.com/" title="Atlassian" target="_blank" rel="external">Atlassian</a> (Which is actually not that strange since we use Confluence and Jira, other products of Atlassian, on a daily basis as well). It’s a convenient GUI to do your Git-related work, in a very visual and intuitive way. Yet, sometimes command-line beats the crap out of GUI-programs, and ofcourse you need to know the underlying techniques. I love command-line for a long time, always been the Linux-guy (although, unfortunately I have to work with Windows in my professional job, and <a href="http://www.cygwin.com/" title="Cygwin" target="_blank" rel="external">Cygwin</a> isn’t that great). Now I must say that the oldskool man-pages for Git are not that informative (allthough <a href="https://na1.salesforce.com/help/pdfs/en/salesforce_git_developer_cheatsheet.pdf" title="Git Cheatsheet" target="_blank" rel="external">cheatsheets</a> help!), and so I was looking for something different.</p><h2 id="Tutorial"><a href="#Tutorial" class="headerlink" title="Tutorial:"></a>Tutorial:</h2><p>A colleague of mine came up with a very informative and visual tool to learn how Git works. It is on Github, even the source code of it. Have a look at an awesome tool created by <a href="http://petermcottle.com/" title="Peter Cottle" target="_blank" rel="external">Peter Cottle</a>.</p><p><img src="https://raw.github.com/pcottle/learnGitBranching/master/assets/learnGitBranching.png"></p><p>The tutorial can be found here: <a href="http://pcottle.github.io/learnGitBranching/" title="Learn Git Branching on GithubIO" target="_blank" rel="external">http://pcottle.github.io/learnGitBranching/</a></p><p>I love it! Still returning to these tutorials to get a good grip on how to branch in Git using only the command-line. Do you have any more informative tutorials or tips on how to improve your experience with Git? Please leave a comment… I’d love to learn more about it.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Push, pull, branch, pull requests, cherry-picking… No, these words do not come from some sort of bad C-rated adult movie… These are terms I work with on a daily basis, using &lt;a href=&quot;http://en.wikipedia.org/wiki/Git_(software&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt; “Git on Wikipedia”). In the past I have worked with &lt;a href=&quot;http://en.wikipedia.org/wiki/Subversion_(software&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Subversion&lt;/a&gt; “Subversion on Wikipedia”), which was a total nightmare (in my humble opinion ofcourse, I do not want to offend people who like SVN). Version control comes in many flavors. Lately I have been working in several teams on various big projects, and so the need for version control of your code is necessary.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Keep up with the latest Javascript &amp; technologies</title>
+    <link href="http://blog.jeltelagendijk.nl/2014/03/keep-up-javascript/"/>
+    <id>http://blog.jeltelagendijk.nl/2014/03/keep-up-javascript/</id>
+    <published>2014-03-09T13:29:28.000Z</published>
+    <updated>2014-03-09T13:29:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>I love Javascript! As a Front-end Developer it is essential that you keep up with the latest technologies, keep experimenting with new stuff. Keep your creativity flowing. So, how do you keep up?</p><a id="more"></a><h2 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h2><p>Subscribe to websites that give you in-depth tutorials! Myself, I have over 250 websites that I follow on <a href="http://feedly.com/" title="Feedly" target="_blank" rel="external">Feedly</a>, categorized (also on other subjects like personal development). RSS is a lifesaver, no more browsing every website, but keep everything in one place…. I used to do this in Google Reader, unfortunately Google decided to <a href="http://googleblog.blogspot.com.au/2013/03/a-second-spring-of-cleaning.html" title="A second spring of cleaning" target="_blank" rel="external">remove this service</a>. I can’t share a list with subscribed websites from Feedly, but have a look at my <a href="https://twitter.com/j3ltedev" title="J3ltedev on Twitter" target="_blank" rel="external">@j3ltedev account on Twitter</a>. This automatically shares new articles that are on the subject of HTML5/CSS/JS in Feedly, through <a href="https://ifttt.com/" title="If This That That" target="_blank" rel="external">IFTTT</a>.</p><h2 id="Twitter"><a href="#Twitter" class="headerlink" title="Twitter"></a>Twitter</h2><p>Follow the websites on Twitter. I have <a href="https://twitter.com/j3lte/lists/js" title="j3lte list: JS" target="_blank" rel="external">a list on Twitter</a>, allthough this one isn’t up to date. I like Feedly more… Need to do an update on all the websites. My list on <a href="https://twitter.com/j3lte/lists/nodejs" title="j3lte list: NodeJS" target="_blank" rel="external">NodeJS</a> is more comprehensive.</p><h2 id="Javascript-Newsletters"><a href="#Javascript-Newsletters" class="headerlink" title="Javascript Newsletters"></a>Javascript Newsletters</h2><p>Subscribe to newsletters. I have been an avid reader of <a href="http://javascriptweekly.com/" title="Javascript Weekly" target="_blank" rel="external">Javascript Weekly</a> since a year. It keeps up with the latest technologies. Take a look at the <a href="http://javascriptweekly.com/issues/171" title="Javascript Weekly issue 171" target="_blank" rel="external">latest issue</a> here.</p><hr><p><img src="http://jeltelagendijk.nl/wp-content/uploads/2014/03/20130807-es6-150x150.png" alt="Javascript: ECMAScript 6" title="ES6"></p><p><em>For now, that’s all. I had an interesting talk last week with two guys who are far more into Javascript than I am, so it seemed. They adviced me to have a look at the core Javascript and new technologies. So, for now, I will be focussing on Vanilla Javascript and the upcoming technologies that are described in the <a href="https://people.mozilla.org/~jorendorff/es6-draft.html" title="ES6 Draft (Mozilla)" target="_blank" rel="external">ECMAScript 6 proposed guidelines</a>, the upcoming standard that will be ratified in December 2014 (expected). Have a look at this <a href="https://github.com/lukehoban/es6features" title="ES6 Features (Github)" target="_blank" rel="external">awesome overview</a>. Let’s dive into it!</em></p><p>Please, if you have more tips on websites/newsletters and other in-depth websites on the subjects, feel free to comment!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I love Javascript! As a Front-end Developer it is essential that you keep up with the latest technologies, keep experimenting with new stuff. Keep your creativity flowing. So, how do you keep up?&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Grunt, Connect, JSON API and Cross Domain trouble</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/09/grunt-connect-json-api-cross-domain/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/09/grunt-connect-json-api-cross-domain/</id>
+    <published>2013-09-06T14:44:34.000Z</published>
+    <updated>2013-09-06T14:44:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>The last couple of months I have been pretty busy, started a new job. Finally, I am now a full-time front-end developer at a big company. In those last months I learned a couple of new things as well. One of them is <a href="http://gruntjs.com/" title="GruntJS" target="_blank" rel="external">Grunt</a>, an awesome task runner. I used it to build templates, based on Twitter Bootstrap. The very neat part of Grunt is doing everything automatically. Never worrying about minifying your CSS, converting that from LESS, uglifying your Javascript files, and so on. What I didn’t knew before was that Grunt as a plugin, called server. It does what it says it does.</p><a id="more"></a><p>I decided to take on a old project I did about a year ago. I had to create several HTML templates, and back then I was struggling with it. I created the files using PHP. Looking back at that, and with knowledge of now, I have spend countless hours doing unproductive things that I could have prevented using Grunt. So I decided to dust off the old files, decomposing them and recreate the whole project using Grunt, <a href="http://assemble.io/" title="Assemble.io - Build Something" target="_blank" rel="external">Assemble</a> and LESS. Just for the sake of experimentation. It took me roughly one day to setup the new project and converting all the old templates to newer handlebar-templates, while extensively using partials. Fun!</p><p>In this particular project I had a JSON API that was being called on the same domain. On production level there were no problems with the Cross-Domain Policy, because it ran on the same domain. The only problem I had: how do I test this on my own computer? Back then I created a small PHP file that would basically tunnel my requests to the domain, using curl. Ofcourse this is not the most ideal solution, but I had no choise. I wasn’t in control of the API and so I could not set any policies.</p><p>Now, with Grunt, I was able to run a server (using <a href="https://github.com/gruntjs/grunt-contrib-connect" title="grunt-contrib-connect on Github" target="_blank" rel="external">Connect</a>) from my command-line, while using ‘watch’ as well. The only problem I had? How to create the tunnel for my JSON api?</p><p>It costed me hours of struggling to find the right plugin, only to find out that there was no plugin that would fit my needs. So, it’s time for some oldskool stuff. How to do it? Have a look at this:</p><script src="https://gist.github.com/j3lte/6463805.js"></script><p>So basically, I used the middleware in connect to filter the requests. Any request that are done on <strong><a href="http://localhost/api/" target="_blank" rel="external">http://localhost/api/</a></strong> will be forwarded to <strong><a href="http://domain.com/api/" target="_blank" rel="external">http://domain.com/api/</a></strong>. When the request is done and responds with data and an HTTP 200 header, it forwards the body to my local request.</p><p><em><strong>So, this is my quick and dirty solution. If you have any other ideas how it can be done (I have searched for hours on Google, finding a practical solution), please let me know!</strong></em></p><p><em><strong>Edit: The solution Drew gave me, seems to do the job as well. Have a look at: <a href="https://github.com/drewzboto/grunt-connect-proxy" title="Grunt Connect Proxy on Github" target="_blank" rel="external">https://github.com/drewzboto/grunt-connect-proxy</a></strong></em></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The last couple of months I have been pretty busy, started a new job. Finally, I am now a full-time front-end developer at a big company. In those last months I learned a couple of new things as well. One of them is &lt;a href=&quot;http://gruntjs.com/&quot; title=&quot;GruntJS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Grunt&lt;/a&gt;, an awesome task runner. I used it to build templates, based on Twitter Bootstrap. The very neat part of Grunt is doing everything automatically. Never worrying about minifying your CSS, converting that from LESS, uglifying your Javascript files, and so on. What I didn’t knew before was that Grunt as a plugin, called server. It does what it says it does.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Node Mandelbrot</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/07/node-mandelbrot/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/07/node-mandelbrot/</id>
+    <published>2013-07-15T10:14:43.000Z</published>
+    <updated>2013-07-15T10:14:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Het is alweer wat jaren geleden dat ik mijn VWO diploma behaalde. Voor het profiel NT had ik als onderwerp voor het profielwerkstuk: Fractals. Geïnteresseerd in wiskunde, wilde ik dit graag verder uitdiepen. Een van de meest bekende fractals is de <a href="http://nl.wikipedia.org/wiki/Mandelbrotverzameling" title="Mandelbrot" target="_blank" rel="external">Mandelbrot-verzameling</a>. Lees gerust verder op Wikipedia wat het inhoudt.</p><a id="more"></a><p>In mijn eerste jaar Informatica diende wij deze fractals te genereren in Java. Nu, zoveel jaar verder, leek het me leuk deze te genereren in HTML5. Dit was echter voor mij niet goed genoeg, dus besloot ik om hier NodeJS voor te gebruiken en het server-side te doen. En, in het kader van het open source krijgen van creaties, heb ik hem nu gedeeld op Github. Zoals je wellicht kunt zien, is deze code verre van optimaal. Hier ga ik in de toekomst nog aan werken (Async uitrekenen van blokken)</p><p>Hier de code voor het genereren ervan in Express (routes/index.js)</p><script src="https://gist.github.com/j3lte/5998569.js"></script><p>Zie de volledige code in mijn repository: <a href="https://github.com/j3lte/node-mandelbrot" target="_blank" rel="external">https://github.com/j3lte/node-mandelbrot</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Het is alweer wat jaren geleden dat ik mijn VWO diploma behaalde. Voor het profiel NT had ik als onderwerp voor het profielwerkstuk: Fractals. Geïnteresseerd in wiskunde, wilde ik dit graag verder uitdiepen. Een van de meest bekende fractals is de &lt;a href=&quot;http://nl.wikipedia.org/wiki/Mandelbrotverzameling&quot; title=&quot;Mandelbrot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mandelbrot-verzameling&lt;/a&gt;. Lees gerust verder op Wikipedia wat het inhoudt.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Twitter, look and feel. Metro</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/05/twitter-look-and-feel-metro/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/05/twitter-look-and-feel-metro/</id>
+    <published>2013-05-21T17:42:56.000Z</published>
+    <updated>2013-05-21T17:42:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’ve been tweeting a lot lately, and wanted to try something new. I like the <a href="http://en.wikipedia.org/wiki/Metro_(design_language" target="_blank" rel="external">Metro UI</a> “Modern UI”) that comes with Windows 8, and I have been bothered by the ugly rounded look that is called “<a href="http://twitter.github.io/bootstrap/" title="Twitter Bootstrap" target="_blank" rel="external">Twitter Bootstrap</a>“. It seems to slow down my browser experience when using Twitter. Luckily it’s possible to change the look &amp; feel of any website in Firefox and Chrome. <a href="http://userstyles.org/" title="Userstyles" target="_blank" rel="external">Userstyles</a>!</p><p>Here’s my <a href="http://userstyles.org/styles/87885/twitter-metro" target="_blank" rel="external">Userstyle for Twitter</a>, which will give you a more slick look and feel. Comments are welcome!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’ve been tweeting a lot lately, and wanted to try something new. I like the &lt;a href=&quot;http://en.wikipedia.org/wiki/Metro_(design_language
+      
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scraping the web: 4chan &amp; NodeJS</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/04/scraping-the-web-4chan-nodejs/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/04/scraping-the-web-4chan-nodejs/</id>
+    <published>2013-04-06T16:33:12.000Z</published>
+    <updated>2013-04-06T16:33:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>It’s been a while that I’ve posted something new. Busy doing work and several projects on the side. Got some major things going on, that’s why I have not been able to keep up with my blog. So today is a new day!</p><a id="more"></a><p><em><strong>Update September 2014 : I had this Gist-file somewhere around. During the whole Fappening, I came to the conclusion that I should create a tool. It is still work-in-progress, but have a look at my latest NodeJS creation : <a href="https://github.com/j3lte/chanarchive" title="chanarchive on Github" target="_blank" rel="external">chanarchive</a></strong></em></p><p>A couple of weeks ago I had a meeting with a couple of developers, discussing new technologies. We talked about sharing knowledge, and it came to my attention that I have not shared much code in the past. Part of being able to grow knowledge is the open-source community, and so I want to share this with you. I opened up my Github account and will post various Gists on there. Feel free to contribute or comment!</p><p>I like scraping the web. I like NodeJS. Put those two things together and you come up with several new things to write and explore. I’ve been a fan of 4chan for a couple of years now, which is fun on some days. They have implemented a JSON API, that can be used for things like mobile apps.</p><p>So, I created a little scraper that will download every picture from a specific thread. It can be found on <a href="https://gist.github.com/j3lte/5326383" target="_blank" rel="external">Github</a>.</p><script src="https://gist.github.com/j3lte/5326383.js"></script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;It’s been a while that I’ve posted something new. Busy doing work and several projects on the side. Got some major things going on, that’s why I have not been able to keep up with my blog. So today is a new day!&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="http://blog.jeltelagendijk.nl/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Pirate Bay: Away From Keyboard</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/02/the-pirate-bay-away-from-keyboard/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/02/the-pirate-bay-away-from-keyboard/</id>
+    <published>2013-02-14T13:20:31.000Z</published>
+    <updated>2013-02-14T13:20:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>“The Pirate Bay: Away From Keyboard”. Interesting documentary about the guys behind The Pirate Bay. This is about their trial, and gives you some insight in their actions, why they do things the way they do. I do not condone copyright violation, it is just an interesting video about the guys behind it.</p><p>It reminds me of a video I have seen before, where a guy talks about the internet: “The more mature the internet becomes, the less value the information has”. This basically means that all information on the internet will eventually be free..</p><p>Just watch the video…</p><center><br><div class="youtube" style="width: 490; height: 300"><object width="490" height="300" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="wmode" value="transparent"><param name="src" value="http://www.youtube.com/v/eTOKXCEwo_8&amp;hd=1&amp;autohide=1"><embed width="490" height="300" type="application/x-shockwave-flash" src="http://www.youtube.com/v/eTOKXCEwo_8&amp;hd=1&amp;autohide=1" wmode="transparent"></object></div><br></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;“The Pirate Bay: Away From Keyboard”. Interesting documentary about the guys behind The Pirate Bay. This is about their trial, and gives 
+      
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>One piece of grey</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/02/one-piece-of-grey/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/02/one-piece-of-grey/</id>
+    <published>2013-02-06T01:05:17.000Z</published>
+    <updated>2013-02-06T01:05:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>My thoughts, in a poem. Not my first, never my last. Just my one piece of grey.</p><blockquote><p>This time I refuse to accept<br>What reality seems to throw at me<br>Survival of conflicting thoughts<br>The master of zen that I can be</p><p>Irrational logic in events<br>The thinker thinks through<br>Is it it just a bad turn of mind?<br>Waiting is the only thing I can do</p><p>The challenge is not to control<br>That what cannot be controlled<br>Answering that one question<br>Without a single word being told</p><p>The red roses will slightly fade<br>Perfect scent gets carried away<br>As I enter a lucid dreamstate knowing<br>Tomorrow is a whole new day</p><p>My sight gazes upon the future<br>Never dwelling in the past<br>A gentle smile while I close my blue eyes<br>My impression will forever last</p></blockquote><p>And yet…</p><center><img src="http://jeltelagendijk.nl/wp-content/uploads/2013/02/stop_waiting.jpg" alt="Stop Waiting"></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;My thoughts, in a poem. Not my first, never my last. Just my one piece of grey.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This time I refuse to accept&lt;br&gt;What 
+      
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+      <category term="poem" scheme="http://blog.jeltelagendijk.nl/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Become a better writer</title>
+    <link href="http://blog.jeltelagendijk.nl/2013/01/become-a-better-writer/"/>
+    <id>http://blog.jeltelagendijk.nl/2013/01/become-a-better-writer/</id>
+    <published>2013-01-30T15:44:51.000Z</published>
+    <updated>2013-01-30T15:44:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>This answer on Quora pretty much sums it up:</p><p><img src="http://qph.cf.quoracdn.net/main-qimg-13e94ea8d3bd6bf9dc771b961c86a67a" alt="become a better writer"></p><p><span class="quora-content-embed" data-name="How-does-one-become-a-better-writer/answers/1971966/quote/263145">Read <a href="http://www.quora.com/How-does-one-become-a-better-writer/answers/1971966/quote/263145" target="_blank" rel="external">Quote of Anon User’s answer to How does one become a better writer?</a> on <a href="http://www.quora.com" target="_blank" rel="external">Quora</a></span></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;This answer on Quora pretty much sums it up:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://qph.cf.quoracdn.net/main-qimg-13e94ea8d3bd6bf9dc771b961c86a67a&quot; alt=
+      
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="http://blog.jeltelagendijk.nl/tags/personal/"/>
+    
+  </entry>
+  
+</feed>
