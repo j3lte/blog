@@ -1,8 +1,13 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:ms:20170412':
     - hexo-server > compression > debug > ms:
         patched: '2017-05-24T03:28:07.159Z'
+  SNYK-JS-LODASH-567746:
+    - hexo > lodash:
+        patched: '2020-05-06T06:40:15.397Z'
+    - hexo > warehouse > lodash:
+        patched: '2020-05-06T06:40:15.397Z'
